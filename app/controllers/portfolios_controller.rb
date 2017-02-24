@@ -6,17 +6,17 @@ class PortfoliosController < ApplicationController
   def new
     @portfolio_item = Portfolio.new
   end
+  
   def create
-    @blog = Blog.new(blog_params)
+    @portfolio_item = Portfolio.new(params.require(:portfolio).permit(:title, :subtitle, :body))
 
     respond_to do |format|
-      if @blog.save
-        format.html { redirect_to @blog, notice: 'Blog was successfully created.' }
-        format.json { render :show, status: :created, location: @blog }
+      if @portfolio_item.save
+        format.html { redirect_to portfolios_path, notice: 'Your portfolio item is now live.' }
       else
         format.html { render :new }
-        format.json { render json: @blog.errors, status: :unprocessable_entity }
       end
     end
   end
+
 end
