@@ -30,8 +30,8 @@ puts "5 skills created"
     title: "Portfolio titls: #{portfolio_item}",
     subtitle: "Ruby on Rails",
     body: "wow confidence pencil vibration compuware dines eccentricity quai gaba polarizing deductibility infuses crowell hatter input convolution crawls cultivate wow confidence pencil vibration compuware dines eccentricity quai gaba polarizing deductibility infuses crowell hatter input convolution crawls cultivate" ,
-    main_image: "http://placehold.it/6000x400"  , 
-    thumb_image: "http://placehold.it/350x200",
+    main_image: "http://placehold.it/600x400"  , 
+    thumb_image: "http://placehold.it/350x200"
     )
 end
 
@@ -40,7 +40,7 @@ end
     title: "Portfolio titls: #{portfolio_item}",
     subtitle: "Angular",
     body: "wow confidence pencil vibration compuware dines eccentricity quai gaba polarizing deductibility infuses crowell hatter input convolution crawls cultivate wow confidence pencil vibration compuware dines eccentricity quai gaba polarizing deductibility infuses crowell hatter input convolution crawls cultivate" ,
-    main_image: "http://placehold.it/6000x400"  , 
+    main_image: "http://placehold.it/600x400"  , 
     thumb_image: "http://placehold.it/350x200",
     )
 end
