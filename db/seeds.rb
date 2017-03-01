@@ -1,7 +1,16 @@
+3.times do |topic|
+  Topic.create!(
+    title: "Topic #{topic}"
+    )
+end
+
+puts "3 Topics created"
+
 10.times do |blog|
   Blog.create!(
     title: "My Blog Post #{blog}" ,
-    body: "arrogantframenoisemakervisitorfracturenearroastestimatenomadpestheatcannibaltreasonanklecolonelbeadsladygrimpiecearmchair"
+    body: "arrogantframenoisemakervisitorfracturenearroastestimatenomadpestheatcannibaltreasonanklecolonelbeadsladygrimpiecearmchair",
+    topic_id: Topic.last.id
     )
 end
 
@@ -16,10 +25,20 @@ end
 
 puts "5 skills created"
 
-9.times do |portfolio_item|
+8.times do |portfolio_item|
   Portfolio.create!(
     title: "Portfolio titls: #{portfolio_item}",
-    subtitle: "My great service",
+    subtitle: "Ruby on Rails",
+    body: "wow confidence pencil vibration compuware dines eccentricity quai gaba polarizing deductibility infuses crowell hatter input convolution crawls cultivate wow confidence pencil vibration compuware dines eccentricity quai gaba polarizing deductibility infuses crowell hatter input convolution crawls cultivate" ,
+    main_image: "http://placehold.it/6000x400"  , 
+    thumb_image: "http://placehold.it/350x200",
+    )
+end
+
+1.times do |portfolio_item|
+  Portfolio.create!(
+    title: "Portfolio titls: #{portfolio_item}",
+    subtitle: "Angular",
     body: "wow confidence pencil vibration compuware dines eccentricity quai gaba polarizing deductibility infuses crowell hatter input convolution crawls cultivate wow confidence pencil vibration compuware dines eccentricity quai gaba polarizing deductibility infuses crowell hatter input convolution crawls cultivate" ,
     main_image: "http://placehold.it/6000x400"  , 
     thumb_image: "http://placehold.it/350x200",
