@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users
-  devise_for :installs
-  resources :users
+  devise_for :users, path: '', path_name: { sign_in: 'log_in', sign_out: 'log_out', sign_up: 'register' }
   resources :portfolios, except: [:show]
   get 'angular-items', to: 'portfolios#angular'
   get 'portfolio/:id', to: 'portfolios#show', as: 'portfolio_show'
