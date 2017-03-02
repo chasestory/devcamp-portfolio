@@ -27,7 +27,7 @@ puts "5 skills created"
 
 8.times do |portfolio_item|
   Portfolio.create!(
-    title: "Portfolio titls: #{portfolio_item}",
+    title: "Portfolio titles: #{portfolio_item}",
     subtitle: "Ruby on Rails",
     body: "wow confidence pencil vibration compuware dines eccentricity quai gaba polarizing deductibility infuses crowell hatter input convolution crawls cultivate wow confidence pencil vibration compuware dines eccentricity quai gaba polarizing deductibility infuses crowell hatter input convolution crawls cultivate" ,
     main_image: "http://placehold.it/600x400"  , 
@@ -37,7 +37,7 @@ end
 
 1.times do |portfolio_item|
   Portfolio.create!(
-    title: "Portfolio titls: #{portfolio_item}",
+    title: "Portfolio titles: #{portfolio_item}",
     subtitle: "Angular",
     body: "wow confidence pencil vibration compuware dines eccentricity quai gaba polarizing deductibility infuses crowell hatter input convolution crawls cultivate wow confidence pencil vibration compuware dines eccentricity quai gaba polarizing deductibility infuses crowell hatter input convolution crawls cultivate" ,
     main_image: "http://placehold.it/600x400"  , 
@@ -46,3 +46,10 @@ end
 end
 
 puts "9 portfolio items created"
+
+3.times do |technology|
+  Portfolio.last.technologies.create!(
+      name: "Technology #{technology}", 
+      portfolio_id: Portfolio.last.id
+    )
+end 
