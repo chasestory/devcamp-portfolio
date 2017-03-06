@@ -2,7 +2,7 @@ class PortfoliosController < ApplicationController
  
   before_action :set_portfolio, only: [:edit, :update, :show, :destroy]
   layout "portfolio"
- 
+  
   def index
     @portfolio_items = Portfolio.all
   end  
@@ -18,9 +18,7 @@ class PortfoliosController < ApplicationController
   
   def create
     @portfolio_item = Portfolio.new(portfolio_params)
-  end 
-
-
+  
     respond_to do |format|
       if @portfolio_item.save
         format.html { redirect_to portfolios_path, notice: 'Your portfolio item is now live.' }
@@ -31,6 +29,7 @@ class PortfoliosController < ApplicationController
   end
 
   def edit
+    3.times { @portfolio_item.technologies.build }
   end
 
   def update
@@ -63,6 +62,6 @@ class PortfoliosController < ApplicationController
   def portfolio_params
       params.require(:portfolio).permit(:title, :subtitle, :body, 
       technologies_attributes: [:name])
-  end
-
+    end
+  end 
 end
