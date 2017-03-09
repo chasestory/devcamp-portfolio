@@ -57,3 +57,5 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'story_view_tool', git: 'https://github.com/chasestory/story_view_tool'
 
 gem 'bootstrap', '~> 4.0.0.alpha6'
+
+gem 'petergate', '~> 1.7'
