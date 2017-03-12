@@ -1,6 +1,6 @@
 <div class="col-sm-8 blog-main">
 
-  <%= render @blogs %>
+  <%= render partial: 'blog', collection: @blogs %>
 
     <nav class="blog-pagination">
       <a class="btn btn-outline-primary" href="#">Older</a>
@@ -8,4 +8,4 @@
     </nav>
 </div>
 
-<%= link_to 'New Blog', new_blog_path if logged_in?(:site_admin) %>
+
