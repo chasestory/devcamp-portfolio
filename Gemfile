@@ -59,3 +59,7 @@ gem 'story_view_tool', git: 'https://github.com/chasestory/story_view_tool'
 gem 'bootstrap', '~> 4.0.0.alpha6'
 
 gem 'petergate', '~> 1.7'
+
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.1'
+
+gem 'kaminari', '~> 1.0', '>= 1.0.1'
