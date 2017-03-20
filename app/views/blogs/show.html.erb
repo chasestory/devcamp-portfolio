@@ -2,6 +2,10 @@
 
   <h2><%= @blog.title %></h2>
 
+  <p>
+    <%= @blog.topic.title %>
+  </p>
+
   <%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin)%> |
   <%= link_to 'Back', blogs_path %>
 
@@ -12,6 +16,6 @@
   <%= render 'comments/comment_form' %>
 
   <div id="comments" data-blog-id="<%= @blog.id %>">
-  <%= render @comments %>
+    <%= render @comments %>
   </div>
 </div>
