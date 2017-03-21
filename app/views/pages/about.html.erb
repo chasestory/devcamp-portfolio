@@ -6,9 +6,24 @@
 
     <div class="row">
       <div class="col-md-4">
-        
-      
-      <%= image_tag "chase.JPG", width: "300", height: "400", alt: "profile image", class: 'profile-img' %>
+        <%= image_tag "chase.jpg", width: "300", height: "400", alt: "profile image", class: 'profile-img' %>
+        <div class="skills">
+          <% @skills.each do |skill| %>
+            <div class="skill">
+            <h4><%= skill.title %></h4>
+            <div class="progress">
+              <div 
+                class="progress-bar progress-bar-striped bg-warning"
+                role="progressbar"
+                aria-valuenow="<%= skill.percent_utilized %>"
+                aria-valuemax="100"
+                style="width: <%= skill.percent_utilized %>%"
+              ></div>
+            </div>
+            </div>
+
+          <% end %>
+        </div>
       </div>
       
       <div class="col-md-8">
@@ -16,7 +31,8 @@
 
         <p> Although, I didn't truly know my own capabilities, nor acknowledged that I could actually find a career field that I could not only be challenged, but the work I performed be contributing to something bigger than myself. To be able to create something that you know is appreciated is one of the most satisfying, as well as humbling things any one person could do. </p>
 
-                  <button
+        <p>
+          <button
             class="btn btn-primary"
             type="button"
             data-toggle="collapse"
