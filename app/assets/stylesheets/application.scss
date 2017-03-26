@@ -204,7 +204,7 @@ body {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: image-url('home_bg.png') no-repeat;
+  background: image-url('sky.jpg') no-repeat;
   background-size: cover;
 
 }
@@ -216,10 +216,11 @@ body {
 .tech-news  {
   color: black;
   margin: 20px;
+  margin-top: 5px;
 }
 
 .tech-news a {
-  color: aqua;
+  color: grey;
 }
 
 .tech-news > .card {
