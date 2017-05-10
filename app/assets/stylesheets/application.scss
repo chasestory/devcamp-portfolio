@@ -84,6 +84,7 @@ body {
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
   border-bottom-color: rgba(255,255,255,.25);
+  transition: .2s;
 }
 
 .nav-masthead .nav-link + .nav-link {
@@ -117,6 +118,13 @@ body {
   font-weight: bold;
 }
 
+.cover-heading {
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.lead {
+  font-family: 'Shadows Into Light', cursive;
+}
 
 /*
  * Footer
@@ -204,7 +212,7 @@ body {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: image-url('newbornStar.jpg') no-repeat;
+  background: image-url('rocks.jpg') no-repeat;
   background-size: cover;
 
 }
