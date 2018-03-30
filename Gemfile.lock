@@ -302,6 +302,7 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   spring
   spring-watcher-listen (~> 2.0.0)
+  sprockets (~> 3.5, >= 3.5.2)
   story_view_tool!
   tether-rails
   turbolinks (~> 5)
