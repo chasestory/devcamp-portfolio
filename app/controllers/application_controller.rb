@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
   before_action :set_copyright
 
   def set_copyright
-    @copyright = StoryViewTool::Renderer.copyright 'CS-Technology Services', 'All rights reserved'
+    @copyright = StoryViewTool::Renderer.copyright 'Chase Story', 'All rights reserved'
   end
 end
 

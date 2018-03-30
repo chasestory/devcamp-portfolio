@@ -72,7 +72,7 @@ module ApplicationHelper
   end
 
   def alert_generator msg
-    js add_gritter(msg, title: "CS-Technology Services Works of Art!", sticky: false)
+    js add_gritter(msg, title: "Chase Story's Works of Art!", sticky: false)
   end
 
 end
