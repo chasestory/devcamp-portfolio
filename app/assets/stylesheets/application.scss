@@ -1,5 +1,6 @@
 @import "bootstrap";
 @import "gritter";
+@import "three";
 /*
  * Globals
  */
@@ -119,11 +120,11 @@ body {
 }
 
 .cover-heading {
-  font-family: 'Shadows Into Light', cursive;
+  font-family:  "Times New Roman", Times, serif;
 }
 
 .lead {
-  font-family: 'Shadows Into Light', cursive;
+  font-family:  "Times New Roman", Times, serif;
 }
 
 /*
@@ -202,7 +203,7 @@ body {
 }
 
 #background {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   min-width: 100%;
@@ -212,8 +213,9 @@ body {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: image-url('Lnx.jpg') no-repeat;
+  background: image-url('large.png') no-repeat;
   background-size: cover;
+  margin-bottom: 50%;
 
 }
 
@@ -248,7 +250,7 @@ body {
 }
 
 .profile-img {
-  border: 1px solid grey;
+  border: none;
   width: 100%
 }
 .app-card-container a {

@@ -24,23 +24,23 @@ module ApplicationHelper
     [
       {
         url: root_path,
-        title: 'Home'
+        title: 'Welcome'
       },
       {
         url: about_me_path,
-        title: 'About Me'
+        title: 'About Us'
       },
       {
         url: contact_path,
-        title: 'Contact'
+        title: 'Reach out'
       },
       {
         url: blogs_path,
-        title: 'Blog'
+        title: 'Creations'
       },
       {
         url: portfolios_path,
-        title: 'Portfolio'
+        title: 'previous projects'
       },
       {
         url: tech_news_path,
@@ -72,7 +72,7 @@ module ApplicationHelper
   end
 
   def alert_generator msg
-    js add_gritter(msg, title: "Chase Story Portfolio", sticky: false)
+    js add_gritter(msg, title: "CS-Technology Services Works of Art!", sticky: false)
   end
 
 end
