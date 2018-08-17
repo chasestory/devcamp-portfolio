@@ -13,9 +13,8 @@
 }
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: #555; 
-  
+  font-family: 'Lato', sans-serif;
+  color: #555;
 }
 
 h1, .h1,
@@ -24,9 +23,9 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-weight: normal;
-  color: #008F95;
+  color: #333;
 }
 
 
@@ -55,7 +54,7 @@ h6, .h6 {
   position: relative;
   padding: 1rem;
   font-weight: 500;
-  color: #3f4652;
+  color: #cdddeb;
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -151,7 +150,7 @@ h6, .h6 {
 }
 .blog-post-meta {
   margin-bottom: 1.25rem;
-  color: #EAE3EA;
+  color: #999;
 }
 
 
@@ -203,4 +202,37 @@ h6, .h6 {
 
 .blog-sidebar-source {
   margin-top: 20px;
+}
+
+.blog-body img {
+  width: 100%;
+}
+
+.blog-body img[alt=xlarge] {
+  width: 800px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.blog-body img[alt=large] {
+  width: 600px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.blog-body img[alt=medium] {
+  width: 400px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.blog-body img[alt=small] {
+  width: 200px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.topic-index > .card {
+  margin: 10px;
+  padding: 20px;
 }
