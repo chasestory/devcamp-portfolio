@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import "gritter";
 
 /*
  * Globals
@@ -29,7 +30,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
+  
 }
 body {
   color: #fff;
@@ -84,6 +85,7 @@ body {
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
   border-bottom-color: rgba(255,255,255,.25);
+  transition: .2s;
 }
 
 .nav-masthead .nav-link + .nav-link {
@@ -117,6 +119,13 @@ body {
   font-weight: bold;
 }
 
+.cover-heading {
+  font-family:  "Times New Roman", Times, serif;
+}
+
+.lead {
+  font-family:  "Times New Roman", Times, serif;
+}
 
 /*
  * Footer
@@ -157,7 +166,7 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 55rem;
+    width: 65rem;
   }
 }
 
@@ -183,6 +192,7 @@ body {
 }
 
 .login > .card {
+  padding: 5px;
   width: 22rem;
   margin: 0 auto;
   float: none;
@@ -192,3 +202,76 @@ body {
   margin-left: 15px;
   margin-right: 15px;
 }
+
+#background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: image-url('newbornStar.jpg') no-repeat;
+  background-size: cover;
+
+}
+
+.app-footer {
+  color: white;
+}
+
+.tech-news  {
+  color: black;
+  margin: 20px;
+  margin-top: 5px;
+}
+
+.tech-news a {
+  color: grey;
+}
+
+.tech-news > .card {
+  padding: 30px;
+}
+
+.app-card-container {
+  color: black;
+  text-align: left;
+}
+
+.app-card-container > .card {
+  padding: 37px;
+  margin-top: 0 auto;
+  border-radius: 2em;
+  opacity: 30%;
+}
+
+.profile-img {
+  border: none;
+  width: 100%
+}
+.app-card-container a {
+  color: grey;
+}
+
+.app-card-container h3 {
+  text-align: center;
+}
+
+.app-card-container p {
+  text-align: center;
+}
+
+.card-block {
+  margin-top: 4px;
+  margin-bottom: 5px;
+}
+
+.skill {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
