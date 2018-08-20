@@ -2,14 +2,15 @@
 @import "jquery-ui";
 @import "gritter";
 
-
 body {
   min-height: 75rem; /* Can be removed; just added for demo purposes */
+  font-family: 'Lato', sans-serif;
 }
 
 .navbar {
-  margin-bottom: 0;
+  margin-bottom: 1;
 }
+
 
 .jumbotron {
   padding-top: 6rem;
@@ -37,6 +38,16 @@ body {
   background-color: #f7f7f7;
 }
 
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Roboto Slab', serif;
+}
+
 .card {
   float: left;
   width: 100%;
@@ -60,10 +71,22 @@ footer {
 
 footer p {
   margin-bottom: .25rem;
+  margin-top: .25rem;
 }
 
-/* Custom Styles */
+/* Custom styles */
 
 .portfolio-container {
   padding-top: 30px;
+}
+
+.portfolio-box{
+  border : 2px solid transparent;    
+  -webkit-transition : border 500ms ease-out; 
+  -moz-transition : border 500ms ease-out;
+  -o-transition : border 500ms ease-out;
+}
+
+.portfolio-box:hover{
+  border : 2px solid #d3d3d3;
 }
