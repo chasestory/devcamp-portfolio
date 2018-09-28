@@ -33,7 +33,7 @@ end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id', '~> 5.1.0'
-gem 'story_view_tool', git: 'https://github.com/chasestory/story_view_tool'
+gem 'story_view_tool', git: 'git@github.com:chasestory/story_view_tool.git'
 gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'petergate', '~> 1.7'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.1'
