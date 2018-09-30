@@ -11,6 +11,7 @@ Rails.application.config.assets.version = '1.0'
 # Rails.application.config.assets.precompile += %w( search.js )
 Rails.application.config.assets.precompile += %w( blogs.scss )
 Rails.application.config.assets.precompile += %w( portfolios.scss )
+Rails.application.config.assets.precompile += %w( application.scss )
 Rails.application.config.assets.precompile += %w( register.scss )
 Rails.application.config.assets.precompile += %w( application.js )
 Rails.application.config.assets.precompile += %w( html.sortable.js )
