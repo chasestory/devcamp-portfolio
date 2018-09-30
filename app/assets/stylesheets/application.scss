@@ -161,6 +161,7 @@ h6, .h6 {
   .mastfoot,
   .cover-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
+
   }
 }
 
@@ -168,7 +169,7 @@ h6, .h6 {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 65em;
+    width: 100%;
   }
 }
 
@@ -217,6 +218,7 @@ h6, .h6 {
 
 .app-footer {
   color: white;
+
 }
 
 .tech-news {
@@ -225,7 +227,7 @@ h6, .h6 {
 }
 
 .tech-news > .card {
-  padding: 30px;
+  padding: 5px;
 }
 
 .tech-news a {
@@ -234,13 +236,23 @@ h6, .h6 {
 
 .app-card-container {
   color: black;
+  position: relative;
   text-align: left;
+  margin: 85px;
+
 }
 
 .app-card-container > .card {
-  padding: 40px;
+  position: relative;
+  padding: 3px;
+  width: 80%;
+  margin-left: 100px;
+
 }
 
+.card-header {
+  text-align: center;
+}
 .profile-img {
   border: 1px solid grey;
 }
@@ -255,7 +267,7 @@ h6, .h6 {
 }
 
 .skill {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 

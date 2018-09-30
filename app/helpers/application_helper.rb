@@ -28,19 +28,19 @@ module ApplicationHelper
       },
       {
         url: about_me_path,
-        title: 'About Us'
+        title: 'About'
       },
       {
         url: contact_path,
-        title: 'Reach out'
+        title: 'Contact'
       },
       {
         url: blogs_path,
-        title: 'Creations'
+        title: 'Blog'
       },
       {
         url: portfolios_path,
-        title: 'previous projects'
+        title: 'Portfolio Projects'
       },
       {
         url: tech_news_path,
