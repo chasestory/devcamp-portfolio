@@ -11,7 +11,7 @@ class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable
+         :recoverable, :rememberable, :trackable, :validatable,  :timeoutable
 
   validates_presence_of :name
 
@@ -24,4 +24,6 @@ class User < ApplicationRecord
   def last_name
     self.name.split.last
   end
+
+  
 end
