@@ -1,15 +1,16 @@
 
 <div class="app-card-container">
   <div class="card">
-        <h2 class="card-header"><strong>About Me</strong></h2>
+        <h2><strong>About Me</strong></h2>
 
+        <hr>
 
       <div class="row">
         <div class="col-sm-4">
           <%= image_tag "chasey.jpg", width: "210", height: "245", alt: "profile image", class: 'profile-img' %>
           <div class="skill">
             <% @skills.each do |skill| %>
-              <div class="skill" class="card-block">
+              <div class="skill">
                 <h5><%= skill.title %></h5>
                 <div class="progress">
                   <div 
@@ -25,9 +26,11 @@
           </div>
         </div>
     
-        <div class="card-body" class="col-sm-8">
+        <div class="col-sm-8">
 
-          <p>Hi, my name is Chase Story, and welcome to my portfolio.</p>
+          <p>
+            Hi, my name is Chase Story, and welcome to my portfolio.
+          </p>
           <p>
             <button
               class="btn btn-success"

@@ -112,7 +112,7 @@ Devise.setup do |config|
   # config.pepper = 'e41612fbc96e033d36b12e6a7bfa8a2d791ea8a0bb6bcb9f7457729028fbb4af191cdae7cf4efc9d46c09f8b34306ab1a4f52e6caebac8b575793e807d9b171d'
 
   # Send a notification email when the user's password is changed
-  config.send_password_change_notification = true
+  config.send_password_change_notification = false
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without
@@ -165,7 +165,7 @@ Devise.setup do |config|
   # ==> Configuration for :timeoutable
   # The time you want to timeout the user session without activity. After this
   # time the user will be asked for credentials again. Default is 30 minutes.
-   config.timeout_in = 30.minutes
+   #config.timeout_in = 30.minutes
 
   # ==> Configuration for :lockable
   # Defines which strategy will be used to lock an account.

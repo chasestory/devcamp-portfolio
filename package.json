@@ -2,7 +2,6 @@
   "name": "devcamp-portfolio",
   "private": true,
   "dependencies": {
-    "modules": "^0.4.0",
-    "node": "^10.11.0"
+    "node_module": "0.0.0"
   }
 }

@@ -148,14 +148,18 @@ h6, .h6 {
     position: fixed;
     top: 0;
   }
+
   .mastfoot {
     position: fixed;
     bottom: 0;
   }
+
   /* Start the vertical centering */
+
   .site-wrapper-inner {
     vertical-align: middle;
   }
+
   /* Handle the widths */
   .masthead,
   .mastfoot,
@@ -169,7 +173,7 @@ h6, .h6 {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 100%;
+    width: 65rem;
   }
 }
 
@@ -227,7 +231,7 @@ h6, .h6 {
 }
 
 .tech-news > .card {
-  padding: 5px;
+  padding: 30px;
 }
 
 .tech-news a {
@@ -236,23 +240,14 @@ h6, .h6 {
 
 .app-card-container {
   color: black;
-  position: relative;
   text-align: left;
-  margin: 85px;
-
 }
 
 .app-card-container > .card {
-  position: relative;
-  padding: 3px;
-  width: 80%;
-  margin-left: 100px;
-
+  padding: 40px;
 }
 
-.card-header {
-  text-align: center;
-}
+
 .profile-img {
   border: 1px solid grey;
 }
@@ -262,8 +257,8 @@ h6, .h6 {
 }
 
 .card-block {
-  margin: 10px;
-  padding: 3px;
+  margin: 5px;
+  padding: 5px;
 }
 
 .skill {
