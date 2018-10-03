@@ -29,13 +29,11 @@
             %> -->
 
           <%= render "shared/application_nav" %>
-
+           <%= alerts %>
+           <%= render "shared/application_footer" %>
           <%= yield %>
 
-          <%= render "shared/application_footer" %>
-
-          <%= alerts %>
-
+          
         </div>
       </div>
     </div>

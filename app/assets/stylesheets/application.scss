@@ -142,7 +142,7 @@ h6, .h6 {
  * Affix and center
  */
 
-@media (min-width: 40em) {
+@media (min-width: 48em) {
   /* Pull out the header and footer */
   .masthead {
     position: fixed;
@@ -165,7 +165,6 @@ h6, .h6 {
   .mastfoot,
   .cover-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
-
   }
 }
 
@@ -264,5 +263,9 @@ h6, .h6 {
 .skill {
   margin-top: 5px;
   margin-bottom: 5px;
+}
+ 
+ .list-group-item {
+  border-color: #CC00CC;
 }
 

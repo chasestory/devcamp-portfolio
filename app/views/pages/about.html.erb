@@ -1,12 +1,10 @@
 
 <div class="app-card-container">
-  <div class="card">
-        <h2><strong>About Me</strong></h2>
-
-        <hr>
-
+  <div class="card" class="col-md-12">
+    <h2><strong>About Me</strong></h2>
+      <hr>
       <div class="row">
-        <div class="col-sm-4">
+        <div class="col-md-3">
           <%= image_tag "chasey.jpg", width: "210", height: "245", alt: "profile image", class: 'profile-img' %>
           <div class="skill">
             <% @skills.each do |skill| %>
@@ -24,64 +22,72 @@
               </div>
             <% end %>
           </div>
-        </div>
-    
-        <div class="col-sm-8">
-
+        </div> 
+        <div class="col-md-9">
           <p>
-            Hi, my name is Chase Story, and welcome to my portfolio.
+            Hi, my name is Chase Story, and welcome to my online portfolio! 
           </p>
-          <p>
-            <button
-              class="btn btn-success"
-              type="button"
-              data-toggle="collapse"
-              data-target="#jobHistory"
-              aria-expanded="false"
-              aria-controler="jobHistory"
-            >
-              Job History
-            </button>
-            <p>         
-              <div class="collapse" id="jobHistory">
-                <div class="card-block">
-                  ConexED | Developer
-                </div>
-                <div class="card-block">
-                  Tranont- Back-End Engineer | DBA
-                </div>
-                <div class="card-block">
-                   CS-Technology Services | (Owner)
-                </div>
-              </div>
-            </p>
-          </p>
-            <br>
-
-            <button
-              class="btn btn-danger"
-              type="button"
-              data-toggle="collapse"
-              data-target="#education"
-              aria-expanded="false"
-              aria-controler="education"
-            >
-              Education
-            </button>
-
-          <p>
-            <div class="collapse" id="education">
-              <div class="card-block">
-                Bottega Tech | Development education
-              </div>
-              <div class="card-block">
-                DATC- CNA
-              </div>
+          <div class="row">
+        
+            <hr>
+            <div class="col-md-6">
+                <p>
+                  <button
+                    class="btn btn-outline-info"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#jobHistory"
+                    aria-expanded="false"
+                    aria-controller="jobHistory"
+                  >
+                    Job History
+                  </button>
+                  <p>         
+                    <div class="collapse" class="card" id="jobHistory">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          ConexED | Developer
+                        </li>
+                        <li class="list-group-item">
+                          Tranont- Back-End Engineer | DBA
+                        </li>
+                        <li class="list-group-item">
+                          CS-Technology Services | (Owner)
+                        </li>
+                      </ul>
+                    </div>
+                  </p>
+                </p>
             </div>
-          </p>
-        </div>
+            <div class="col-md-6">
+              <p>
+                <button
+                  class="btn btn-outline-success"
+                  type="button"
+                  data-toggle="collapse"
+                  aria-expanded="false"
+                  data-target="#education"
+                  aria-controller="education"
+                  aria-pressed="false"
+                >
+                  Education
+                </button>
+                <p>
+                  <div class="collapse" class="card" id="education">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        Bottega Tech | Development education
+                      </li>
+                      <li class="list-group-item">
+                        DATC- CNA
+                      </li>
+                    </ul>
+                  </div>
+                </p>
+              </p>
+            </div>
+          </div>
       </div>
-    </div>
   </div>
 </div>
 
