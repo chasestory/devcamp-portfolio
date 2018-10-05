@@ -21,14 +21,20 @@
       <p><%= t.name %></p>
       <% end %>
 
+      <hr>
+
       <% if logged_in?(:root_admin) %>
       <div class="col-md-12">
         <%= link_to "Edit Item", edit_portfolio_path(@portfolio_item), class: 'btn btn-warning' %>
+      </div>
+      
+      <br>
+
+       <div class="col-md-12">
+        <%= link_to "Delete Item", @portfolio_item, method: :delete,  data: { confirm: "Are you sure you want to remove this post forever?" },class: 'btn btn-danger' %>
       </div>
      <% end %>
     </div>
   </div>
 </div>
-
-
 
