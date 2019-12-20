@@ -5,12 +5,12 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'rails', '~> 5.0.1'
+gem 'rails', '~> 6.0.1'
 gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.2'
+gem 'coffee-rails', '~> 5.0.0'
 gem "capistrano", "~> 3.11", require: false
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
@@ -50,3 +50,4 @@ gem 'redis', '~> 3.3', '>= 3.3.3'
 gem 'redcarpet', '~> 3.4'
 gem 'coderay', '~> 1.1', '>= 1.1.1'
 gem 'sqreen', '>= 1.16'
+ruby "2.6.3"
