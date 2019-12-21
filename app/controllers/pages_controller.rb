@@ -1,4 +1,6 @@
 class PagesController < ApplicationController
+  require 'social_tool.rb'
+  include SocialTool
   def home
     @posts = Blog.all
     @skills = Skill.all

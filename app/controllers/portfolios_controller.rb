@@ -1,4 +1,6 @@
 class PortfoliosController < ApplicationController
+  require 'portfolios_helper.rb'
+  include PortfoliosHelper
   layout 'portfolio'
   access all: [:show, :index, :angular], user: {except: [:destroy, :new, :create, :update, :edit, :sort]}, root_admin: :all
   

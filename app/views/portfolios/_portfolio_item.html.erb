@@ -1,7 +1,8 @@
 <div class="col-md-4">
   <div class="card" data-id="<%= portfolio_item.id %>">
-    <%= link_to image_tag portfolio_img(portfolio_item.thumb_image, 'thumb'), width: '100%' %> 
-
+    <% if portfolio_item.thumb_image %>
+      <%= image_tag portfolio_img(portfolio_item.thumb_image_url, 'thumb'), width: '100%'  %>
+    <% end %>
     <p class="card-text">
       <span>View Project: <%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %></span>
     </p>
