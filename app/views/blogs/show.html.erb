@@ -22,7 +22,7 @@
   <%= link_to 'Back', blogs_path %>
 
   <p>
-    <%= markdown @blog.body %>
+    <%= markdown(@blog.body) %>
   </p>
 
   <%= render 'comments/comment_form' %>
