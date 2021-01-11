@@ -47,7 +47,7 @@ gem 'tether-rails'
 gem 'gritter', '~> 1.2'
 gem 'twitter', '~> 6.1'
 gem 'redis', '~> 3.3', '>= 3.3.3'
-gem 'redcarpet', '~> 3.4'
+gem 'redcarpet', '~> 3.5'
 gem 'coderay', '~> 1.1', '>= 1.1.1'
 gem 'sqreen', '>= 1.16'
 ruby "2.6.5"
